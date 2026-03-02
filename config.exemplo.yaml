@@ -1,0 +1,23 @@
+keywords:
+  - pregão
+  - concorrência
+  - tomada de preços
+  - aquisição
+  - contratação
+
+sources:
+  - name: Prefeitura Exemplo A
+    url: https://exemplo.gov.br/licitacoes
+    item_selector: ".lista-licitacoes li"
+    title_selector: "a"
+    link_selector: "a"
+    date_selector: ".data"
+    date_format: "%d/%m/%Y"
+
+  - name: Prefeitura Exemplo B
+    url: https://portal.exemplo.gov.br/transparencia/licitacoes
+    item_selector: "table tbody tr"
+    title_selector: "td:nth-child(2)"
+    link_selector: "td:nth-child(2) a"
+    date_selector: "td:nth-child(1)"
+    date_format: "%d/%m/%Y"
